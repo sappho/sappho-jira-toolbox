@@ -24,8 +24,7 @@ public class NotifyAssyst implements FunctionProvider {
             Issue issue = (Issue) vars.get("issue");
             Object assystId = ComponentManager.getInstance().getCustomFieldManager().
                     getCustomFieldObjectByName(customFieldName).getValue(issue);
-            if (assystId != null) {
-                // if so then we report to Assyst as an action
+            if (assystId != null && assystId instanceof String && !assystId.equals("")) {
                 Output output = new Output(new Date(), (String) assystId, issue.getString("key"), baseUrl,
                         host, share);
                 output.write(ACTION, output.getFilename(ACTION));
