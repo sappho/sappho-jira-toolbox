@@ -1,0 +1,36 @@
+<tr bgcolor="#ffffff">
+    <td align="right" valign="top" bgcolor="#fffff0">
+        <span class="label">Jira Base URL:</span>
+    </td>
+    <td bgcolor="#ffffff" nowrap>
+        <input type="text" name="baseUrl" value="$baseUrl"/>
+        <br><font size="1">The base URL for your Jira system</font>
+    </td>
+</tr>
+<tr bgcolor="#ffffff">
+    <td align="right" valign="top" bgcolor="#fffff0">
+        <span class="label">Assyst ID Custom Field Name:</span>
+    </td>
+    <td bgcolor="#ffffff" nowrap>
+        <input type="text" name="customFieldName" value="$customFieldName"/>
+        <br><font size="1">The name of the custom field which will contain Assyst IDs</font>
+    </td>
+</tr>
+<tr bgcolor="#ffffff">
+    <td align="right" valign="top" bgcolor="#fffff0">
+        <span class="label">Assyst Host:</span>
+    </td>
+    <td bgcolor="#ffffff" nowrap>
+        <input type="text" name="host" value="$host"/>
+        <br><font size="1">The hostname of the Assyst system</font>
+    </td>
+</tr>
+<tr bgcolor="#ffffff">
+    <td align="right" valign="top" bgcolor="#fffff0">
+        <span class="label">Assyst Share:</span>
+    </td>
+    <td bgcolor="#ffffff" nowrap>
+        <input type="text" name="share" value="$share"/>
+        <br><font size="1">The name of a share on the Assyst host onto which you want notify files to be written</font>
+    </td>
+</tr>

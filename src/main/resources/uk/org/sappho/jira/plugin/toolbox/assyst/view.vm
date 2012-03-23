@@ -1,0 +1,5 @@
+Notify Assyst that an issue has been set up in Jira.<br />
+Jira Base URL: <b>$baseUrl</b><br />
+Assyst ID Custom Field Name: <b>$customFieldName</b><br />
+Assyst Host: <b>$host</b><br />
+Assyst Share: <b>$share</b>

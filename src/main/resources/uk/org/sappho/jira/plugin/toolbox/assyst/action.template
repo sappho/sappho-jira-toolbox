@@ -1,0 +1,14 @@
+@*@INCIDENTREF@*@:${assystId}
+@*@ACTIONTYPE@*@:LOGGED IN JIRA
+@*@ACTIONEDBY@*@:JIRA
+@*@SUCCESSFUL@*@:YES
+@*@DESCRIPTION@*@:${baseUrl}/browse/${jiraId}
+@*@DATEACTIONED@*@:${date?string("dd-MM-yyyy HH:mm:ss")}
+|END OF ACTION|
+@*@INCIDENTREF@*@:${assystId}
+@*@ACTIONTYPE@*@:CLOSED
+@*@ACTIONEDBY@*@:JIRA
+@*@SUCCESSFUL@*@:YES
+@*@DESCRIPTION@*@:Closing call in Assyst as logged in Jira
+@*@DATEACTIONED@*@:${date?string("dd-MM-yyyy HH:mm:ss")}
+|END OF ACTION|

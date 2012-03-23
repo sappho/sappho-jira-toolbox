@@ -1,0 +1,24 @@
+<atlassian-plugin key="${project.groupId}.${project.artifactId}" name="${project.name}" plugins-version="2">
+
+    <plugin-info>
+        <description>${project.description}</description>
+        <version>${project.version}</version>
+        <vendor name="${project.organization.name}" url="${project.organization.url}" />
+    </plugin-info>
+
+    <workflow-function key="NotifyAssystLogged" name="Notify Assyst"
+                       class="uk.org.sappho.jira.plugin.toolbox.assyst.AssystParamFactory">
+        <description>Notify Assyst that an issue has been set up in Jira.</description>
+        <function-class>uk.org.sappho.jira.plugin.toolbox.assyst.NotifyAssyst</function-class>
+        <orderable>true</orderable>
+        <unique>true</unique>
+        <deletable>true</deletable>
+        <resource type="velocity" name="view"
+                  location="uk/org/sappho/jira/plugin/toolbox/assyst/view.vm" />
+        <resource type="velocity" name="input-parameters"
+                  location="uk/org/sappho/jira/plugin/toolbox/assyst/edit.vm" />
+        <resource type="velocity" name="edit-parameters"
+                  location="uk/org/sappho/jira/plugin/toolbox/assyst/edit.vm" />
+    </workflow-function>
+
+</atlassian-plugin>

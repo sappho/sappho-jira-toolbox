@@ -1,0 +1,3 @@
+@*@INCIDENTREF@*@:${assystId}
+@*@USERREF@*@:${jiraId}
+|END OF EVENT UPDATE|
